@@ -5,12 +5,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import RequireAuth from "./Pages/Login/RequireAuth";
 import Login from "./Pages/Login/Login";
 import SignUpMain from "./Pages/Login/SignUpMain";
+import Navbar from "./Pages/Home/Navbar";
 
 function App() {
   return (
-    <div className='min-h-screen p-20 flex justify-center items-center w-full bg-slate-700'>
-
-
+    <div>
+      <Navbar></Navbar>
+      <div className='min-h-screen p-20 flex justify-center items-center w-full bg-slate-700'>
       <Routes>
           <Route path="/" element={
             <RequireAuth>
@@ -26,6 +27,7 @@ function App() {
      
 
       <ToastContainer />
+    </div>
     </div>
   );
 }

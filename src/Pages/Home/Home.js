@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import Tables from '../Tables';
+import Navbar from './Navbar';
 
 const Home = () => {
 
@@ -28,9 +29,7 @@ const Home = () => {
 
 
     return (
-        <div className='min-h-screen p-20 flex justify-center items-center w-full bg-slate-700'>
-
-
+        <div className='min-h-screen p-20 flex justify-center items-center w-full bg-slate-700'> 
             <div className='card pb-10 bg-base-100 text-black shadow-2xl w-2/3'>
 
             <h2 style={{fontFamily:"poppins"}} className='text-center pt-8 text-2xl font-semibold'>To-Do-App</h2>
